@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 });
 
-function asd(){
-                            gtag('event', 'Preregistration');
-                            console.log("asd");
+function asd(a){
+                            gtag('event', 'Preregistration' );
+                            console.log("asd"+a);
                         }
