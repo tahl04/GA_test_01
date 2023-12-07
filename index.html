@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <!-- META -->
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="" />
+        <meta name="description" content="" />
+        <!-- FAVICON -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/favicon.png" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <!-- SCRIPT -->
+        <script defer src="https://www.youtube.com/iframe_api"></script>
+        <script defer src="./resources/js/jquery.min.js"></script>
+        <script defer src="./resources/js/swiper.min.js"></script>
+        <script defer src="./resources/js/common.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWLPFP2B58"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZWLPFP2B58');
+        </script>
+    </head>
+    <body class="ko">
+        <section>
+            <div class="wrap">
+                <div class="btn">
+                    <a href="#">클릭해주세요</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="popup">
+            <div class="popup__wrap">
+                <form onsubmit="return validateForm()">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="company" value="apple" />
+                                애플
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="company" value="google" />
+                                구글
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <button type="submit" class="submit">전송</button>
+                        <a class="aaaa">취소</a>
+                    </div>
+
+                    <p class="hide" href="javascript:gtag('event', 'screen_view')">전송완료!</p>
+                    
+                </form>
+
+                <script>
+                    function validateForm() {
+                        var selectedCompany = document.querySelector('input[name="company"]:checked');
+
+                        if (!selectedCompany) {
+                            alert('회사를 선택해주세요.');
+                            return false;
+                        }
+
+                        document.querySelector('.hide').classList.remove('hide');
+
+                        return false;
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
