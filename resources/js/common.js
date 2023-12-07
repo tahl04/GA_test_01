@@ -7,4 +7,12 @@ $(document).ready(function () {
         $('.popup').removeClass('on');
         console.log(11);
     });
+
+
+
 });
+
+function asd(){
+                            gtag('event', 'Preregistration');
+                            console.log("asd");
+                        }
