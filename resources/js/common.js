@@ -1,15 +1,15 @@
 $(document).ready(function () {
     $('.btn').click(function () {
-        $('.popup').addClass('on');
+        // $('.popup').addClass('on');
     });
 
     $('.aaaa').click(function () {
         $('.popup').removeClass('on');
-        console.log(11);
+        // console.log(11);
     });
 
     $('.hide').click(function () {
-        console.log(31);
+        console.log(45);
         gtag('event', 'asd222');
     });
 
