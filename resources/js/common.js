@@ -8,9 +8,14 @@ $(document).ready(function () {
         console.log(11);
     });
 
-
+    $('.hide').click(function () {
+        console.log(31);
+        gtag('event', 'Preregistration_Complete');
+    });
 
 });
+
+
 
 function asd(a){
                             // gtag('event', 'Preregistration' );
