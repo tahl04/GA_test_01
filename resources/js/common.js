@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     $('.hide').click(function () {
         console.log(31);
-        gtag('event', 'Preregistration_Complete');
+        gtag('event', 'asd222');
     });
 
 });
