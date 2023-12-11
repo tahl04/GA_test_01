@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.btn').click(function () {
-        // $('.popup').addClass('on');
+        $('.popup').addClass('on');
     });
 
     $('.aaaa').click(function () {
