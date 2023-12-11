@@ -26,7 +26,7 @@ function asd(a){
                             // console.log("asd"+a+2);
                             // gtag('event', 'Preregistration' );
                             // console.log("asd"+a+3);
-                            // gtag('event', 'Preregistration' );
+                            // gtag('event', 'Preregistration_Complete' );
                             gtag('event', 'asd111' );
                             console.log("asd"+a);
                             gtag('event', 'asd222' );
