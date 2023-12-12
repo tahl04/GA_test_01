@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('.hide').click(function () {
         console.log(45);
         gtag('event', 'asd222');
+        console.log(gtag);
     });
 
 });
